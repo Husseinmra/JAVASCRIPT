@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercíco de JS</title>
+</head>
+<body>
+
+  <h1>OLÁ! MUNDO</h1>
+  <p>
+    Este é o meu exercício de JS.
+  </p>
+
+  <script>
+
+  var n1 = parseInt(window.prompt('digite um número')) //esse prompt entende sempre como string, então preciso converter para numero, parseInt é para inteiro, se eu quiser para decimal, uso parseFloat ou somente Number para tudo
+  var n2 = Number(window.prompt('digite outro número')) 
+  var soma = n1 + n2 //o sinal de + concatena os valores
+  window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+    
+  </script>
+</body>
+</html>

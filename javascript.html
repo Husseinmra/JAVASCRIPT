@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <h1>Olá Mundo</h1>
+    <p>Já quebrei a maldição</p>
+
+    <h2>Alertas</h2>
+    <p>Window alert é uma função que exibe uma mensagem de alerta na tela.</p>
+
+    <p>
+      Window confirm é uma função que exibe uma mensagem de confirmação na tela.
+    </p>
+
+    <p>Window prompt é uma função que exibe uma mensagem de prompt na tela.</p>
+
+    <h2>Variaveis</h2>
+    <p>
+      Variaveis são espaços na memória do computador que armazenam valores. São
+      chamadas de var ou let. <br />
+      Elas são como vagas e guardam informações que podem ser usadas no
+      programa. <br />
+      Elas são como uma caixa onde guardo coisas. <br />
+      Exemplo: <br />
+      var nome = 'João' <br />
+      var idade = 20 <br />
+      var cidade = 'São Paulo' <br />
+    </p>
+
+    <h2>Data types</h2>
+    <p>
+      elas podem conter numeros (positivos, negativos, decimais) <br />
+      <li>Infinity = Infinito</li>
+      <li>NAN = Not a Number</li>
+      elas podem conter texto (strings) <br />
+      elas podem conter valores boolean (true, false) <br />
+      elas podem ser do tipo null (não tem valor) <br />
+      elas podem conter objects (conjunto de valores) <br />
+      <li>elas podem conter arrays (lista de valores)</li>
+      <br />
+    </p>
+
+    <h2>Typeof</h2>
+    <p>
+      O typeof é uma função que retorna o tipo de dado de uma variável. <br />
+      Exemplo: <br />
+      typeof nome = 'string' <br />
+      typeof idade = 'number' <br />
+      typeof cidade = 'string' <br />
+    </p>
+
+    <h2>o Sinal de Igual</h2>
+    <p>
+      O sinal de igual é usado para atribuir um valor a uma variável. <br />
+      O símbolo de igual quer dizer RECEBE e não igual. <br />
+      Se eu quero dizer que algo é IGUAL a outro, uso o símbolo de igual duplo.
+      <br />
+      Exemplo: <br />
+      var nome = 'João' <br />
+      var nome == 'Maria'
+    </p>
+
+    <h2>Sinais identificadores</h2>
+
+    <p>São usados para identificar o nome da variável.</p>
+
+    <p>
+      Podem começar com letras, NÃO COM NUMEROS, NÃO COM ESPAÇOS, NÃO COM
+      CARACTERES ESPECIAIS. <br />
+      Para substituir o espaço eu uso o underline. <br />
+      Exemplo: <br />
+      var nome_completo = 'João da Silva' não posso usar palavras reservadas.
+      <br />
+      Exemplo: <br />
+      alert, var, let, const, function, if, else, while, for, etc. <br />
+      Porque ja são usadas para outras coisas. <br />
+      Maiúsculas e minúsculas fazem diferença. Devo me lembrar de usar o mesmo
+      padrão. <br />
+      è interessante usar nomes que façam sentido com o que a variável guarda.
+      <br />
+    </p>
+
+    <h2>Node JS</h2>
+    <p>
+      Node JS é um ambiente de execução de JavaScript fora do navegador. <br />
+      Ele permite executar JavaScript fora do navegador, como em servidores, e
+      fornece uma API para interagir com o sistema operacional. <br />
+      Para usar o Node js dentro do Cursor ou VSCode, eu abro o terminal e
+      digito node. <br />
+      Para sair, digito .exit. <br />
+      Para abrir o terminal aqui eu em terminal ali em cima ou uso o atalho ctrl
+      + shift + '
+    </p>
+
+    <h2>Conversão de tipos</h2>
+    <p>
+      O JavaScript é uma linguagem de tipagem dinâmica, o que significa que as
+      variáveis podem conter diferentes tipos de dados em diferentes momentos.
+      <br />
+      A conversão de tipos ocorre quando o JavaScript precisa converter um tipo
+      de dado para outro para realizar uma operação. <br>
+      Exemplo: <br>
+      Para que eu transforme valor de texto (string) em um numero eu uso Parseint para  numero inteiro e Parsefloat para decimal, ou posso usar Number(conteudo da string) <br>
+      Se eu quero converter para string, uso o String na frente da variavel.
+      <br>
+      Exemplo: <br>
+      var n1 = 10 <br>
+      n1.toString() <br>
+      ou posso usar string(n1) <br>
+      Assim, ele converte 10, que é o valor da variavel n1, para string ao invés de number. <br>
+      Posso usar o Tofixed() para escrever numeros depois da virgula e definir quantas casas decimais dentro do () <br>
+    </p>
+
+    <h2>Template Strings</h2>
+    <p>
+      O template strings é formado por $ e {}. <br />
+      Ele serve para substituir o valor de uma variavel em uma string de maneira
+      que eu nao precise usar o sinal de + para concatenar os valores de
+      variávies distintas. <br />
+      Para isso, eu abro aspas (``), escrevo a frase que quero dentro delas e quando eu quiser colocar a variavel em algum lugar eu uso &{nome da variavel}
+      <br />
+    </p>
+
+    <h2>Operadores</h2>
+    <p>
+      Permitem realizar operações com as variáveis e possuem alguns tipos como:
+        <ul>
+          <li>Aritméticos (), **, *, /, %, + e - (nessa ordem de precedência)</li> <br>
+          % é o resto da divisão inteira (o que sobra antes de começar a virgula na divisão) e ** é potencia (numero elevado)
+          <li> atribuição - São substituições que eu faço na minha operação (como escalonamento em matemática)</li>
+          <li>Relacionais - >, <, >=, <=, == e != (resultam em boolean = verdadeiro ou falso) (posso fazer essas comparações com strings tb) e não possuem precedência. </li>
+          <li>Identidade - identificam se uma valor é exatamente igual ao outro. Pra isso eu uso ===</li>
+          <li>Lógicos - ! é negação, && (um e outro) conjunção (eu preciso que os dois sejam verdadeiros) e ||(um ou outro) é disjunção (um ou outro precisa ser verdadeiro) seguindo esta ordem de precedência</li> <br>
+          exemplificando tudi em uma função: <br>
+          salário >= 2000 && sexo != 'mulher' --> o salário é maior ou igual a dois mil e o sexo não é uma mulher. Ou seja, homens que ganham no mínimo 2000
+          <li>Ternário - ? e : dentro de uma mesma operação - Eu faço uma pergunta e defino as opções que podem aparecer se for verdadeiro ou falso, nesta ordem. O primeiro valor é se a resposta for sim e o segundo se for não <br>
+            Exemplo: <br>
+          var média = 7 -> media >= 8? 'aprovado':'reprovado'
+          </li>
+        </ul>
+    </p>
+    <h3>Ordem de precência dos operadores</h3>
+    <p>
+      Primeiro resolve-se os aritméticcos, depois resolvo os relacionais e depois lógicos. 
+    </p>
+    
+    <p> exemplo disso em operações na foto abaixo:
+      <img src="imagens/atribuiçoes.png" alt="fotoatribuições">
+    <br>
+    A sintaxe que eu posso usar para descrever autoatribuição pode ser escrita como a operação que quero fazer = e o numero que farei a operação.
+    Por exemplo: <br>
+    se eu digo que num é 8 e depois digo que num é += 2 então ele passará a ser 10 e em seguida se eu disser num /= 2 num passará a ser 5 <br>
+    
+    
+    Pode ser melhor vista na imagem abaixo:
+    <img src="imagens/atribuições2.png" alt="fotoatribuições"> <br>
+    Se eu quero somar mais uma unidade no N eu posso usar ++ ou se quero diminuir um numero eu posso usar -- antes do N. Exemplo: <br>
+    n = 5 -> ++n = 6 
+
+
+
+
+    </p>
+
+  </body>
+</html>
