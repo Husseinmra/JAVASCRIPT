@@ -159,12 +159,94 @@
     Pode ser melhor vista na imagem abaixo:
     <img src="imagens/atribuições2.png" alt="fotoatribuições"> <br>
     Se eu quero somar mais uma unidade no N eu posso usar ++ ou se quero diminuir um numero eu posso usar -- antes do N. Exemplo: <br>
-    n = 5 -> ++n = 6 
+    n = 5 -> ++n = 6  
+  </p>
 
+  <h2>DOM</h2>
+  <P>
+    O DOM é uma forma de interação com o HTML através do JavaScript. <br>
+    O DOM é uma árvore de elementos que representam o HTML. Ou seja, ele permite traçar elementos dentro do meu HTML selecionando paragrafos, titulos, divs e etc. <br>
+    Então eu crio uma Variável e defino que ela será = a um elemento do meu HTML usando getElementBy (opções da lista abaixo) () e dentro destes parenteses eu coloco qual tag, id e afins eu quero entre aspas. <br>
+    Para selecionar um elemento do HTML, dependendo do que ele for eu uso o window.document.getElementBy: (posso omitir a palavra window)<br>
+    <ul>
+      <li>getElementsByTagName - seleciona pelo nome da tag</li>
+      <li>getElementById - seleciona pelo ID</li>
+      <li>getElementsByClassName - seleciona pela classe</li>
+      <li>querySelector - seleciona pelo seletor</li>
+      <li>querySelectorAll - seleciona todos os elementos que correspondem ao seletor</li>
+    </ul>
+    <br>
+    Exemplo de como eu posso usar o DOM: <br>
+    var p = window.document.getElementsByTagName ('p')[0] (o colochete me diz qual parágrafo eu quero selecionar, sendo que 0 é o primeiro, ja que este comando esta no plural.) <br>
+    Eu posso tambem usar o querySelector para selecionar um elemento do HTML. <br>
+    para isso eu uso o querySelector e dentro dele eu coloco o seletor que quero usar. <br>
+    Se eu quiser selecionar uma div ou um id eu coloco # ou . assim como faço no CSS. <br>
+    Caso eu queira selecionar mais de um elemento eu uso o querySelectorAll. <br>
+    Exemplo:
+    window.documento.querySelector('div.classe') caso eu queira uma div com class<br>
+  </P>
 
+  <h2>Eventos</h2>
+  <p>
 
+    Os eventos são ações que acontecem no HTML. <br>
+    Exemplo: <br>
+    Quando eu clico em um botão, ocorre um evento. <br>
+    Quando eu rolar a pagina, ocorre um evento. <br>
+    Quando eu digitar algo no input, ocorre um evento. <br>
+    
+    Uma função é um conjunto de instruções que executam uma tarefa ou calcula um valor assim gerando um evento.<br>
+    Para executar uma função, você deve chamar o nome da função, seguido de parênteses. <br> 
+    Então, se eu criei algo em HTML, eu posso chamar ela para o JS e la eu digo atraves de uma função o que eu quero que ele faça. <br>
+    Exemplo: <br>
+    Em html eu tenho uma div id="area" e em JS eu tenho uma função que faz com que quando eu clicar na div, ela mude de cor. <br>
+    Para isso, dentro do codigo da div eu adiciono o evento de click com o onclick e dentro dele eu coloco um nome que será usado para ser encontrado pelo JS. <br>
+    Exemplo: <br>
+    <div id="area" onclick="clicar()"> <br>
+      No JS eu crio uma function.clicar() em seguida abro {} e dentro dele eu coloco o que eu quero que ele faça. <br>
+      Exemplo: <br>
+      function clicar() { <br>
+      var a = document.getElementById('area').innerText = 'Clicou!' }<br>
+      ou eu posso criar o document da variavel fora das chaves e aplicar diferentes funções para a mesma variavel, lembrando sempre que todas as funções que eu quiser adicionar precisam estar dentro do codigo da div em html. <br>
+      foto abaixo
+      <img src="imagens/funcoes.png" alt="foto de funções"> <br>
+      Se eu nao quiser digitar eventos no meu HTML eu posso usar o addEventListener para o var que eu ja chamei do HTML. Em seguida defino entre aspas simples qual é a ação e depois dou um nome para poder ser puxado pela função . <br> 
+      Exemplo: <br>
+      var a = document.getElementById('area') <br>
+      a.addEventListener('click', clicar) <br>
+      function clicar() { <br>
+        a.innerText = 'Clicou!'} <br>
+      
+  </p>
 
-    </p>
+  <h2>Condições</h2>
+  <p>
+    As condições são usadas para tomar decisões no código. <br>
+    Exemplo: <br>
+    Se eu quero que o meu programa faça algo se uma condição for verdadeira, eu uso o if. <br>
+    Nesse caso trata-se de uma condição simples, pois se o resultado for falso nada acontece. <br>
+    Para criar uma condição composta, eu uso o else. <br>
+    Então if é verdadeiro e else é falso. <br>
+    A estrutura basica de uma condição é a seguinte: <br>
+    if (condição) { <br>
+      //código a ser executado se a condição for verdadeira <br>
+      else { <br>
+        //código a ser executado se a condição for falsa <br>
+        <br>
+  </p>
+
+  <h2>Condições aninhadas</h2>
+  <p>
+    Basicamente, são condiçoes dentro de condições. <br>
+    Entao eu faço o if e dou uma condição, se for verdadeira irá executar, se for falso irá abrir outra condição com mais duas condições dentro e assim por diante <br>
+    Posso usar tambem o else if no lugar de abrir um novo if e em seguida somente o else. <br>
+  </p>
+
+  <h2>Pegando a hora do device</h2>
+  <p>
+    Para pegar a hora exata do meu aparelho, ou do cliente ou do servidor eu defino um var hora = new Date() e em seguida eu crio um var horaatual = hora.getHours() 
+  </p>
+  
 
   </body>
 </html>

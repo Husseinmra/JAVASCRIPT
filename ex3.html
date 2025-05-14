@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Else If</title>
+</head>
+<body>
+  <h1>
+    Testando Else If
+  </h1>
+  <input type="number" name="peso" id="ipeso" placeholder="Digite seu peso">
+  <input type="number" name="altura" id="ialtura" placeholder="Digite sua altura">
+  <input type="button" value="Verificar" onclick="verificar()">
+
+  <div id = res>
+<p>
+  Será que você está <strong>OBESO?</strong>
+</p>
+<p>
+  Você está 
+</p>
+
+  </div>
+
+  <script>
+    function verificar() {
+      var peso = document.querySelector('#ipeso')
+      var altura = document.querySelector('#ialtura') 
+      var res0 = document.getElementsByTagName('p') [0]
+      var res1 = document.getElementsByTagName('p') [1]
+ 
+      res0.innerHTML = (`seu peso é ${peso.value} e sua altura é ${altura.value}`)
+
+      if (peso.value > 90 && altura.value < 180){
+        res1.innerHTML = ('Você está obeso!')
+      }
+        else 
+        if (peso.value > 90  != altura.value <= 180){
+          res1.innerHTML = ('Você está magro!')
+        }
+
+        else {
+          res1.innerHTML = ('Você está no peso ideal!')
+        }
+    }
+
+
+
+  </script>
+
+  
+</body>
+</html>

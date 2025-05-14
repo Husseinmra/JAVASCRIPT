@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex4</title>
+</head>
+<body>
+  <h1>
+    Dando bom dia
+  </h1>
+
+  <input type="number" name="hora" id="ihora">
+  <input type="button" value="Clique aqui" onclick="cliquei()">
+
+  <p>
+    Agora são X horas
+  </p>
+
+  <p>
+    Tenha um/uma Bom Dia!
+  </p>
+
+  <script>
+    function cliquei() {
+    var hora = document.querySelector('#ihora').value
+    var mensagem0 = document.getElementsByTagName('p')[0]
+    var mensagem1 = document.getElementsByTagName('p')[1]
+    if (hora >= 6 && hora < 12) {
+      mensagem0.innerHTML = (`Agora são ${hora}`)
+      mensagem1.innerHTML = ('Tenha um Bom Dia!')
+    }
+
+    else 
+    if (hora >= 12 && hora < 18 ) {
+      mensagem0.innerHTML = (`Agora são ${hora}`)
+      mensagem1.innerHTML = ('Tenha uma Boa Tarde!')
+    }
+    else 
+    if (hora >= 18 && hora < 24) {
+      mensagem0.innerHTML = (`Agora são ${hora}`)
+      mensagem1.innerHTML = ('Tenha uma Boa Noite!')
+    }
+    else {
+      mensagem0.innerHTML = (`Agora são ${hora}`)
+      mensagem1.innerHTML = ('Boa Madruga!')
+    }
+
+
+    }
+
+
+  </script>
+
+  
+</body>
+</html>
