@@ -240,12 +240,39 @@
     Basicamente, são condiçoes dentro de condições. <br>
     Entao eu faço o if e dou uma condição, se for verdadeira irá executar, se for falso irá abrir outra condição com mais duas condições dentro e assim por diante <br>
     Posso usar tambem o else if no lugar de abrir um novo if e em seguida somente o else. <br>
+    ex: else if (condição) { <br>
+      //código a ser executado se a condição for verdadeira <br>
+      } <br>
+      else (não pdoe ter condição, porque é tudo o que sobrar) {
+        //código a ser executado se as anteriores nao forem verdadeiras
+      } 
   </p>
 
   <h2>Pegando a hora do device</h2>
   <p>
     Para pegar a hora exata do meu aparelho, ou do cliente ou do servidor eu defino um var hora = new Date() e em seguida eu crio um var horaatual = hora.getHours() 
   </p>
+
+  <h2>Switch</h2>
+  <p>
+        O switch é uma estrutura de decisão que permite testar uma expressão e executar um bloco de código correspondente ao valor da expressão. <br>
+        <br>
+        Ele é uma expressão que pode me dar varios resultados e entre cada resultado eu tenho um break. <br>
+        Ele não é indicado para intervalos e sim para valores em string ou numeros inteiros que sejam respostas especificas. <br> 
+        Exemplo: <br>
+
+        switch (expressão a ser analisada) { <br>
+          case valor1 ou qualquer outro nome que eu digitar: <br>
+          //código a ser executado se a expressão for igual a valor1 <br>
+          break <br>
+          case valor2: <br>
+          //código a ser executado se a expressão for igual a valor2 <br>
+          break <br>
+          default: <br>
+          //código a ser executado se a expressão não for igual a nenhum dos valores anteriores <br>
+          break; <br>
+          <br>
+        }
   
 
   </body>
