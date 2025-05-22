@@ -273,7 +273,114 @@
           break; <br>
           <br>
         }
-  
+
+        <h2>REPETIÇÕES</h2>
+        <p>
+          Repetições, ou laçocs, são usadas para executar um bloco de código várias vezes. <br>
+          para isso temos  o while, o do while e o for. <br>
+          <br>
+          O while é uma estrutura de repetição que executa um bloco de código enquanto uma condição é verdadeira. <br>
+          Exemplo: <br>
+          while (condição) { <br>
+            //código a ser executado enquanto a condição for verdadeira <br>
+            <br>
+            O do while é uma estrutura de repetição que executa um bloco de código enquanto uma condição é verdadeira. <br>
+            Basicamente é o mesmo do while, mas ele executa o código pelo menos uma vez antes de verificar a condição.  <br>
+            Exemplo: <br>
+            do { <br>
+              //código a ser executado enquanto a condição for verdadeira <br>
+              while (condição); <br>
+              <br>
+              O for é uma estrutura de repetição que executa um bloco de código um número determinado de vezes. <br>
+              Exemplo: <br>
+              for (inicialização; condição; incremento) { <br>
+                //código a ser executado enquanto a condição for verdadeira <br>
+                <br>
+              } <br>
+              Se eu defino que var c é 1 e que c é menor ou igual a 10, e que c++ eu estou dizendo que o valor de c vai ser 1 e depois vai ser 2 e assim por diante até chegar a 10. <br>
+              <br>
+              Ex for (var c = 1; c <= 10; c++) { <br>
+                //código a ser executado enquanto a condição for verdadeira <br>
+                console.log(c) <br>
+              } <br> é o jeito mais recomendado.
+
+              <h2>Depuração</h2>
+              <p>
+                Depuração é o processo de encontrar e corrigir erros em um programa. <br>
+                Uso o DEBUG aqui no programa e nele posso acompanhar etapa por etapa o que está acontecendo no meu código. <br>
+              </p>
+
+              <h2>Variável composta</h2>
+              <p>
+                Tambem chamada de array, é uma variável que pode armazenar vários valores em um único espaço de memória. <br>
+                Isso ocorre quando eu defino uma variavel X e dentro dela tenho varias "vagas" começando por 0 e terminando no número que eu definir. <br>
+                Exemplo: <br>
+                var nome = ['João', 'Maria', 'José'] <br>
+                Nome é o Array e dentro dele temos as vagas 0, 1 e 2. que são os nomes que escolhi. <br>
+                Se eu defino um Var num por exemplo e nele quero adiconar varios numeros, porem, quero adicionar outro numero em sequencia, vejo qual é o numero da vaga dentro da variavel num e coloco num [numero da vaga, começando por 0] = o numero que quero adicionar. <br>
+                Eu posso tambem usar o .push para que ele mesmo adicione o numero na proxima vaga. <br>
+                Exemplo: <br>
+                var num = [5, 8, 10] <br>
+                num.push(7) <br>
+                ai ele adicionará o numero 7 em seguida dentro do array. <br>
+                Para descobrir quantos elementos tem dentro do meu array eu uso o .length <br>
+                para ordenar eles em ordem eu uso o .sort() <br>
+                para ordenar eles em ordem inversa eu uso o .reverse() <br>
+                Se eu quero achar um elemento dentro do meu array eu uso o .indexOf() <br>
+                Exemplo: <br>
+                var num = [5, 8, 10] <br>
+                num.indexOf(8) <br>
+                ele vai me retornar o numero 1, pois o numero 8 está na vaga 1. <br>
+                Caso ele não encontre o elemento ele retornará -1. <br>
+                Se eu quiser que ele retorne outra coisa que nao seja o -1 padrão, eu posso usar o if (se o numero for igual a -1) { <br>
+                  console.log('não encontrado') <br>
+                } else { <br>
+                  console.log('encontrado' ou " o numero esta na posição (var definida que encontra o numero com o indexOf)") <br>
+                } <br>
+              </p>
+
+              <h2>
+                Funções
+              </h2>
+              <p>
+                Funções são açoes que ocorrem quando eu chamo elas em algum comando. <br>
+                Exemplo: <br>
+                function soma() { <br>
+                  var n1 = 5 <br>
+                  var n2 = 10 <br>
+                  var soma = n1 + n2 <br>
+                  console.log(soma) <br>
+                } <br>
+                Porem, eu posso criar uma função que recebe valores como parametro. <br>
+                Exemplo: <br>
+                function soma(n1, n2) { <br>
+                  return n1 + n2 <br>
+                  <br>
+                  } <br>
+                  var resultado = soma(5, 10) <br>
+                  Ele vai me retornar 15, pois ele vai somar os valores que eu passei como parametro respectivamente. <br>
+                  Eu posso tambem definir = e um numero dentro da função ja (junto do N por exemplo) <br>
+                  Posso tambem definir uma variavel como uma funç~so seguida de um returno 
+
+                  <h2>
+                    obejetos
+                  </h2>
+  <p>
+    Diferente do Array, o Objeto é uma variável que pode armazenar vários valores em um único espaço de memória. <br>
+    ;eu uso [] para definir o array e { } para definir o objeto. <br>
+    Posso também usar funções dentro do objeto <br>
+    Exemplo: <br>
+    let pessoa = { <br>
+      nome: 'João', <br>
+      idade: 20, <br>
+      cidade: 'São Paulo', <br>
+      falar: function() { <br>
+        console.log('Olá, meu nome é ' + this.nome) <br>
+      } <br>
+    } <br>
+    Então as casas não são numeradas e sim nomeadas conforme eu mesmo defini. <br>
+
+  </p>
 
   </body>
 </html>

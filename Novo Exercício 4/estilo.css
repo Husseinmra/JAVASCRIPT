@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #438ac3;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+
+
+#dados {
+    background-color: azure;
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    
+}
+
+#dados p {
+    padding: 10px;
+    text-align: center;
+}
+
+select {
+    width: 150px;
+}
+
+#resultado {
+    text-align: center;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-top: 20px;
+}
+
+footer {
+    color: azure;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+

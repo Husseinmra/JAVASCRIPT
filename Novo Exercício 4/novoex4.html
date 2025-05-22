@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Analisador de Números</h1>
+  <section>
+    <div id="dados">
+      <p>
+        <label for="txtinicio">DIGITE UM NÚMERO:</label>
+        <input type="number" name="txtinicio" id="txtinicio" required >
+        <input type="button" value="Adicionar" onclick="adicionar()">
+      </p>
+
+      
+
+      <p>
+        <select name="num" id="inum" size="6">Números</select>
+      </p>
+     
+     
+      <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+      </p>
+
+    </div>
+    <div id="resultado">
+      <p>
+        Verificando...
+      </p>
+
+    </div>
+
+  </section>
+ <footer>
+  <p>&copy; Criado por Hussein</p>
+ </footer> 
+
+ <script src="script.js"></script>
+</body>
+</html>

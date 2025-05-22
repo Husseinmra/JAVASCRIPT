@@ -9,9 +9,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
 header{
   color: azure;
   text-align: center;
@@ -19,7 +16,7 @@ header{
   margin-top: 20px;
 }
 
-main{
+section#entrada{
     background-color: azure;
     border-radius: 10px;
     padding: 15px;
@@ -28,27 +25,28 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section#entrada p {
+  margin: 10px;
 }
 
-section#texto {
-  padding: 20px;
-}
-
-section#foto img {
-  padding-bottom: 20px;
-  height: 200px;
-  width: 200px;
+section#res {
   
+  text-align: center;
+  background-color: azure;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin-top:20px;
 }
 
+img {
+  display: none;
+  margin: auto;
+}
 footer{
+    margin-top: 20px;
     color: azure;
     text-align: center;
-    font-style: italic;
-    margin-bottom: 20px;
-  margin-top: 20px;
 }
