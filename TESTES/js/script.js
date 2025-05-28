@@ -1,4 +1,10 @@
-const num1 = prompt('Digite o primeiro número')
-const num2 = prompt('Digite o segundo número')
-const resultado = Number (num1) + Number (num2)
-alert (`O resulado das soma dos dois números digitados é ${resultado}`)
+const prompt1 = Number(prompt('Digite um número:'));
+const num = document.getElementById('numero');
+num.innerHTML = prompt1;
+
+document.body.innerHTML += `O numero digitado é inteiro? R: ${Number.isInteger(prompt1)} <br>`;
+document.body.innerHTML += ``
+document.body.innerHTML += ``
+document.body.innerHTML += ``
+document.body.innerHTML += ``
+

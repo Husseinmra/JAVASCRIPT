@@ -6,48 +6,60 @@
     <title>JAVASCRIPT</title>
   </head>
   <body>
-    <h1>Olá Mundo</h1>
-    <p>Já quebrei a maldição</p>
+    <h1>JAVASCRIPT</h1>
 
     <h2>Alertas</h2>
-    <p>Window alert é uma função que exibe uma mensagem de alerta na tela.</p>
+    
+    <UL>
+      <LI><p>Window alert = exibe uma mensagem de alerta na tela.</p></LI>
+      <LI><p>Window confirm = uma mensagem de confirmação na tela.</p></LI>
+      <LI><p>Window prompt = exibe uma mensagem de prompt na tela.</p></LI>  
+      <P>Todos os resultados inseridos são STRINGS</P>
+    </UL>
 
-    <p>
-      Window confirm é uma função que exibe uma mensagem de confirmação na tela.
-    </p>
-
-    <p>Window prompt é uma função que exibe uma mensagem de prompt na tela.</p>
-
-    <h2>Variaveis</h2>
+    <h2>VARIÁVEIS</h2>
     <p>
       Variaveis são espaços na memória do computador que armazenam valores. São
       chamadas de var, const ou let. <br />
       Elas são como vagas e guardam informações que podem ser usadas no
       programa. <br />
-      Elas são como uma caixa onde guardo coisas. <br />
       Exemplo: <br />
-      var nome = 'João' <br />
-      var idade = 20 <br />
-      var cidade = 'São Paulo' <br />
-      Importante lembrar que eu não posso REDECLARAR uma variável que já existe. <br />
+      - var nome = 'João' <br />
+      - let idade = 20 <br />
+      - const cidade = 'São Paulo' <br />
+      Importante lembrar que eu não posso REDECLARAR uma variável que já existe. <br/>
       Eu posso mudar seu valor, mas não posso criar outra com o mesmo nome. <br />
-      EM CONSTANTES NAO POSSO MUDAR nada
+      EM CONSTANTES NAO POSSO MUDAR nada, NEM MESMO SEU VALOR. <br />
+      Evitar usar VAR e sim LET no lugar
     </p>
 
-    <h2>Data types</h2>
+    <h2>DATA TYPES</h2>
     <p>
-      Essas variáveis podem conter numeros (positivos, negativos, decimais) <br />
-      <li>Infinity = Infinito</li>
-      <li>NAN = Not a Number</li>
-      elas podem conter texto (strings) <br />
-      elas podem conter valores boolean (true, false) <br />
-      elas podem ser do tipo null (não tem valor) <br />
-      elas podem conter objects (conjunto de valores) <br />
-      <li>elas podem conter arrays (lista de valores)</li>
-      <br />
+      Essas variáveis podem conter vários tipos de informações como: <br />
+      <ul>
+        <li>Strings = texto entre aspas</li>
+        <li>Numbers e dentre eles podemos ter (infinitos, NAN, inteiros, parciais)</li>
+        <li>Booleans = true ou false</li>
+        <li>Null = não possuem valores </li>
+        <li>Objects{} = contem alguns valores acessados por nomes</li>
+        <li>Arrays[] = alguns valores dentro acessados por índices (0 a infinito)</li>
+      </ul>
+    </p>
+    <h2>PRIMITIVOS E REFERÊNCIA</h2>
+    <p>
+      Primitivos = não podem ser alterados em si (não tem a ver com a variável e sim com o valor que ela guarda) -> String, Number, Boolean, Null e etc. (Quando eu usar o valor de uma variável deste tipo em outra os valores serão copiados e independentes entre si.) <br />
+      Referenciados = podem ser alterados em si (não tem a ver com a variável e sim com o valor que ela guarda) -> Arrays, Objects e Functions (Quando eu usar o valor de uma variável deste tipo em outra os valores serão alterados caso eu altere uma delas. Isso só não ocorrerá se eu usar o spread operator (...) para copiar os valores.)
+    </p>
+    <p>
+      Exemplo:
+      const a = 'joão'
+      const b = a
+      Se eu alterar o valor de a posteriormente o b não se alterará pois é um valor primitivo. <br />
+      Se eu fizer o mesmo com os mutáveis, e alterar o valor de a, o b também se alterará pois é um valor referenciado. <br />
+      Para que ele nao se altere neste último caso eu escreveria b como const b = {...a}. Aí ele se tornaria um valor primitivo e independente de a. <br />
     </p>
 
-    <h2>Typeof</h2>
+    <h2>TYPEOF</h2>
     <p>
       O typeof é uma função que retorna o tipo de dado de uma variável. <br />
       Exemplo: <br />
@@ -56,7 +68,7 @@
       typeof cidade = 'string' <br />
     </p>
 
-    <h2>o Sinal de Igual</h2>
+    <h2>=</h2>
     <p>
       O sinal de igual é usado para atribuir um valor a uma variável. <br />
       O símbolo de igual quer dizer RECEBE e não igual. <br />
@@ -67,7 +79,7 @@
       var nome == 'Maria'
     </p>
 
-    <h2>Sinais identificadores</h2>
+    <h2>IDENTIFICADORES</h2>
 
     <p>São usados para identificar o nome da variável.</p>
 
@@ -78,37 +90,21 @@
       Exemplo: <br />
       var nome_completo = 'João da Silva' não posso usar palavras reservadas.
       <br />
-      Exemplo: <br />
-      alert, var, let, const, function, if, else, while, for, etc. <br />
+      EVITAR: <br />
+      - alert, var, let, const, function, if, else, while, for, etc. <br />
       Porque ja são usadas para outras coisas. <br />
       Maiúsculas e minúsculas fazem diferença. Devo me lembrar de usar o mesmo
       padrão. <br />
-      è interessante usar nomes que façam sentido com o que a variável guarda.
+      É interessante usar nomes que façam sentido com o que a variável guarda.
       <br />
     </p>
 
-    <h2>Node JS</h2>
+    <h2>CONVERSÃO</h2>
     <p>
-      Node JS é um ambiente de execução de JavaScript fora do navegador. <br />
-      Ele permite executar JavaScript fora do navegador, como em servidores, e
-      fornece uma API para interagir com o sistema operacional. <br />
-      Para usar o Node js dentro do Cursor ou VSCode, eu abro o terminal e
-      digito node. <br />
-      Para sair, digito .exit. <br />
-      Para abrir o terminal aqui eu em terminal ali em cima ou uso o atalho ctrl
-      + shift + '
-    </p>
-
-    <h2>Conversão de tipos</h2>
-    <p>
-      O JavaScript é uma linguagem de tipagem dinâmica, o que significa que as
-      variáveis podem conter diferentes tipos de dados em diferentes momentos.
-      <br />
-      A conversão de tipos ocorre quando o JavaScript precisa converter um tipo
-      de dado para outro para realizar uma operação. <br>
-      Exemplo: <br>
-      Para que eu transforme valor de texto (string) em um numero eu uso Parseint para  numero inteiro e Parsefloat para decimal, ou posso usar Number(conteudo da string) <br>
-      Se eu quero converter para string, uso o String na frente da variavel.
+      O JavaScript é uma linguagem de tipagem dinâmica, o JavaScript precisa converter um tipo
+      de dado para outro para realizar uma operação devido a diferença entre os dados. <br>
+      Para que eu transforme valor de texto (string) em um numero eu uso Parseint(conteudo da string) para  numero inteiro e Parsefloat(conteudo da string) para decimal, ou posso usar Number(conteudo da string) <br>
+      Se eu quero converter para string, uso o String na frente da variavel OU .toString ao final.
       <br>
       Exemplo: <br>
       var n1 = 10 <br>
@@ -118,17 +114,16 @@
       Posso usar o Tofixed() para escrever numeros depois da virgula e definir quantas casas decimais dentro do () <br>
     </p>
 
-    <h2>Template Strings</h2>
+    <h2>TEMPLATE STRINGS</h2>
     <p>
       O template strings é formado por $ e {}. <br />
       Ele serve para substituir o valor de uma variavel em uma string de maneira
       que eu nao precise usar o sinal de + para concatenar os valores de
       variávies distintas. <br />
       Para isso, eu abro aspas (``), escrevo a frase que quero dentro delas e quando eu quiser colocar a variavel em algum lugar eu uso &{nome da variavel}
-      <br />
     </p>
 
-    <h2>Operadores</h2>
+    <h2>OPERADORES</h2>
     <p>
       Permitem realizar operações com as variáveis e possuem alguns tipos como:
         <ul>
@@ -146,7 +141,8 @@
           </li>
         </ul>
     </p>
-    <h3>Ordem de precência dos operadores</h3>
+
+    <h3>PRECEDÊNCIA ENTRE OPERADORES</h3>
     <p>
       Primeiro resolve-se os aritméticcos, depois resolvo os relacionais e depois lógicos. 
     </p>
@@ -167,9 +163,8 @@
 
   <h2>DOM</h2>
   <P>
-    O DOM é uma forma de interação com o HTML através do JavaScript. <br>
     O DOM é uma árvore de elementos que representam o HTML. Ou seja, ele permite traçar elementos dentro do meu HTML selecionando paragrafos, titulos, divs e etc. <br>
-    Então eu crio uma Variável e defino que ela será = a um elemento do meu HTML usando getElementBy (opções da lista abaixo) () e dentro destes parenteses eu coloco qual tag, id e afins eu quero entre aspas. <br>
+    Então eu crio uma Variável e defino que ela será = a um elemento do meu HTML usando getElementBy() (opções da lista abaixo)  e dentro destes parenteses eu coloco qual tag, id e afins eu quero entre aspas. <br>
     Para selecionar um elemento do HTML, dependendo do que ele for eu uso o window.document.getElementBy: (posso omitir a palavra window)<br>
     <ul>
       <li>getElementsByTagName - seleciona pelo nome da tag</li>
@@ -180,16 +175,16 @@
     </ul>
     <br>
     Exemplo de como eu posso usar o DOM: <br>
-    var p = window.document.getElementsByTagName ('p')[0] (o colochete me diz qual parágrafo eu quero selecionar, sendo que 0 é o primeiro, ja que este comando esta no plural.) <br>
+    var p = window.document.getElementsByTagName ('p')[0] (o colchete me diz qual parágrafo eu quero selecionar, sendo que 0 é o primeiro, ja que este comando esta no plural.) <br>
     Eu posso tambem usar o querySelector para selecionar um elemento do HTML. <br>
     para isso eu uso o querySelector e dentro dele eu coloco o seletor que quero usar. <br>
     Se eu quiser selecionar uma div ou um id eu coloco # ou . assim como faço no CSS. <br>
     Caso eu queira selecionar mais de um elemento eu uso o querySelectorAll. <br>
     Exemplo:
-    window.documento.querySelector('div.classe') caso eu queira uma div com class<br>
+    window.document.querySelector('div.classe') caso eu queira uma div com class<br>
   </P>
 
-  <h2>Eventos</h2>
+  <h2>EVENTOS</h2>
   <p>
 
     Os eventos são ações que acontecem no HTML. <br>
@@ -222,7 +217,7 @@
       
   </p>
 
-  <h2>Condições</h2>
+  <h2>CONDIÇÕES</h2>
   <p>
     As condições são usadas para tomar decisões no código. <br>
     Exemplo: <br>
@@ -238,7 +233,7 @@
         <br>
   </p>
 
-  <h2>Condições aninhadas</h2>
+  <h2>CONDIÇÕES ANINHADAS</h2>
   <p>
     Basicamente, são condiçoes dentro de condições. <br>
     Entao eu faço o if e dou uma condição, se for verdadeira irá executar, se for falso irá abrir outra condição com mais duas condições dentro e assim por diante <br>
@@ -277,9 +272,9 @@
           <br>
         }
 
-        <h2>REPETIÇÕES</h2>
+<h2>REPETIÇÕES</h2>
         <p>
-          Repetições, ou laçocs, são usadas para executar um bloco de código várias vezes. <br>
+          Repetições, ou laços, são usadas para executar um bloco de código várias vezes. <br>
           para isso temos  o while, o do while e o for. <br>
           <br>
           O while é uma estrutura de repetição que executa um bloco de código enquanto uma condição é verdadeira. <br>
@@ -307,29 +302,37 @@
                 console.log(c) <br>
               } <br> é o jeito mais recomendado.
 
-              <h2>Depuração</h2>
+<h2>Depuração</h2>
               <p>
                 Depuração é o processo de encontrar e corrigir erros em um programa. <br>
                 Uso o DEBUG aqui no programa e nele posso acompanhar etapa por etapa o que está acontecendo no meu código. <br>
               </p>
 
-              <h2>Variável composta</h2>
+<h2>VARIÁVEL COMPOSTA [ARRAY]</h2>
               <p>
-                Tambem chamada de array, é uma variável que pode armazenar vários valores em um único espaço de memória. <br>
+                É uma variável que pode armazenar vários valores em um único espaço de memória. <br>
                 Isso ocorre quando eu defino uma variavel X e dentro dela tenho varias "vagas" começando por 0 e terminando no número que eu definir. <br>
                 Exemplo: <br>
                 var nome = ['João', 'Maria', 'José'] <br>
                 Nome é o Array e dentro dele temos as vagas 0, 1 e 2. que são os nomes que escolhi. <br>
-                Se eu defino um Var num por exemplo e nele quero adiconar varios numeros, porem, quero adicionar outro numero em sequencia, vejo qual é o numero da vaga dentro da variavel num e coloco num [numero da vaga, começando por 0] = o numero que quero adicionar. <br>
-                Eu posso tambem usar o .push para que ele mesmo adicione o numero na proxima vaga. <br>
-                Exemplo: <br>
+                ACÕES: <br>
+                <ul>
+                  <li>Vejo quantos índices tenho e digo variavel [proximo numero] = x. </li>
+                  <li>variável.push para que ele mesmo adicione o número na proxima vaga</li>
+                  <li>.unshift para adicionar no início ao inves do final</li>
+                  <li>.length para descobrir quantos índices</li>
+                  <li>.sort para ordenálos</li>
+                  <li>.reverse para inverter a ordem</li>
+                  <li>.indexOf para descobrir um elemento no array</li>
+                  <li>.pop eu removo o último elemento</li>
+                  <li>.shift eu removo o primeiro elemento</li>
+                  <li>delete variável [índice] remove o que eu quiser e deixa o espaço vazio</li>
+                  <li>.slice (de um indice até o que eu quero) vai considerar o intervalo</li>
+                </ul>
+                Exemplos: <br>
                 var num = [5, 8, 10] <br>
                 num.push(7) <br>
                 ai ele adicionará o numero 7 em seguida dentro do array. <br>
-                Para descobrir quantos elementos tem dentro do meu array eu uso o .length <br>
-                para ordenar eles em ordem eu uso o .sort() <br>
-                para ordenar eles em ordem inversa eu uso o .reverse() <br>
-                Se eu quero achar um elemento dentro do meu array eu uso o .indexOf() <br>
                 Exemplo: <br>
                 var num = [5, 8, 10] <br>
                 num.indexOf(8) <br>
@@ -342,9 +345,9 @@
                 } <br>
               </p>
 
-              <h2>
-                Funções
-              </h2>
+<h2>
+  Funções
+</h2>
               <p>
                 Funções são açoes que ocorrem quando eu chamo elas em algum comando. <br>
                 Exemplo: <br>
@@ -365,25 +368,45 @@
                   Eu posso tambem definir = e um numero dentro da função ja (junto do N por exemplo) <br>
                   Posso tambem definir uma variavel como uma funç~so seguida de um returno 
 
-                  <h2>
-                    obejetos
-                  </h2>
+                  <h2>ARROW FUNCTION</h2>
+                  <P>Ela funciona como substituição da forma convencional de funções ao substituir tudo por =>, removendo  a palavra function, o return e os colchetes</P>
+                  exemplo: <br>
+                  const soma = (n1, n2) => n1 + n2 <br>
+                  console.log soma (5, 10) <br>
+                  Ele vai me retornar 15, pois ele vai somar os valores que eu passei como parametro RESPECTIVAMENTE. <br>
+
+  <h2> obejetos </h2>
   <p>
     Diferente do Array, o Objeto é uma variável que pode armazenar vários valores em um único espaço de memória. <br>
-    ;eu uso [] para definir o array e { } para definir o objeto. <br>
-    Posso também usar funções dentro do objeto <br>
+    Uso [] para definir o array e { } para definir o objeto. <br>
+    Posso usar funções dentro do objeto <br>
     Exemplo: <br>
-    let pessoa = { <br>
-      nome: 'João', <br>
-      idade: 20, <br>
-      cidade: 'São Paulo', <br>
-      falar: function() { <br>
-        console.log('Olá, meu nome é ' + this.nome) <br>
-      } <br>
+    pedir para função me retornar um Objeto <br>
+    function criarPessoa(nome, sobrenome, idade) {
+      return {nome, sobrenome, idade} <br>
     } <br>
-    Então as casas não são numeradas e sim nomeadas conforme eu mesmo defini. <br>
+    Quando eu quero que a função chame parametros do objeto eu uso o this.parametro do objeto. <br>
+    let pessoa1 = criarPessoa('João', 'Silva', 30) <br>
+    console.log(pessoa1) <br>
+    Ele vai me retornar um objeto com os valores que eu passei como parametro. <br>
+    Para acessar os valores do objeto, eu uso o ponto. <br>
+    Exemplo: <br>
+    console.log(pessoa1.nome) <br>
 
   </p>
+
+  <h2>MISC</h2>
+  <p>Usar Number. e depois digitar os comando abaixo:</p>
+  isInteger é para saber se é inteiro ou nao (booleano) 
+  isNan é para saber se a conta da certo ou nao (booleano)
+  Math.floor é para arredondar para baixo
+  Math.ceil é para arredondar para cima
+  Math.round é para arredondar para o mais proximo (0.5 pra cima arredonda pra cima e )
+0.49 arredonda pra baixo)
+  Math.random é para gerar um numero aleatorio
+  Math.max é para pegar o maior numero de uma lista
+  Math.min é para pegar o menor numero de uma lista
+
 
   </body>
 </html>
