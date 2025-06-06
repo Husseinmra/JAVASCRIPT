@@ -395,6 +395,19 @@
 
   </p>
 
+  <h2>ESCOPO</h2>
+  <P>
+    Escopo é o local onde a variável foi declarada. <br>
+    Se ela é declarada dentro de uma função, ela só pode ser acessada dentro daquela função. <br>
+    Se ela é declarada fora de uma função, ela pode ser acessada em qualquer lugar do código. <br>
+    Exemplo: <br>
+    let nome = 'João' -> está "desprotegida" e pode causar conflito com outras bibliotecas que contenham "nome" como varável. Se eu quero protegè-la e evitar conflitos eu posso envolver tudo o que eu quero dentro de uma função genérica por exemplo: <br>
+    function escopo() { <br>
+      let nome = joao <br>
+      document.write.getElementBy... <br>
+    }
+  </P>
+  
   <h2>MISC</h2>
   <p>Usar Number. e depois digitar os comando abaixo:</p>
   isInteger é para saber se é inteiro ou nao (booleano) 
