@@ -79,3 +79,38 @@ ul {
     margin-bottom: 10px;
     padding-left: 20px;
 }
+
+.erro {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resultado {
+    font-weight: bold;
+    text-align: center;
+}
+
+.abaixo {
+  color: red;
+}
+
+.normal {
+  color: green;
+}
+
+.sobrepeso {
+  color: orange;
+}
+
+.obesidade1 {
+  color: rgb(255, 0, 0);
+}
+
+.obesidade2 {
+  color: rgb(128, 0, 0);
+}
+
+.obesidade3 {
+  color: rgb(33, 0, 0);
+}
