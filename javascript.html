@@ -248,15 +248,21 @@
 
   <h2>Pegando a hora do device</h2>
   <p>
-    Para pegar a hora exata do meu aparelho, ou do cliente ou do servidor eu defino um var hora = new Date() e em seguida eu crio um var horaatual = hora.getHours() 
+    Para pegar a hora exata do meu aparelho, ou do cliente ou do servidor eu defino um var hora = new Date() e em seguida eu crio um var horaatual = hora.getHours() <br>
+    Se eu quiser usar o new Date e definir uma data com hora eu uso o new Date(ANO, MÊS, DIA, HORA, MINUTO, SEGUNDO, MILÉSIMOS) OU USANDO STRING da seguinte forma new Date (2025-06-09 16:27:54) <br>
+    Posso tambem usar o new Date() para pegar a data atual e depois usar os métodos getFullYear(), getMonth( adicionar +1 porque no JS o primeiro mês começa no 0), getDate(), getHours(), getMinutes(), getSeconds(), getMilliseconds() e getDay(esse refere-se ao dia da semana/ 0 é domingo e sábado é 6)para pegar cada parte da data. <br>
+    As vezes posso encontrar em base de datatos o new Date (com milesimos de segundos ou segundos que representam a data atual) <br>
+
   </p>
 
   <h2>Switch</h2>
   <p>
-        O switch é uma estrutura de decisão que permite testar uma expressão e executar um bloco de código correspondente ao valor da expressão. <br>
-        <br>
-        Ele é uma expressão que pode me dar varios resultados e entre cada resultado eu tenho um break. <br>
+    
+        Ele é uma expressão que pode me dar varios resultados e entre cada resultado eu tenho um break, funcionando como se fosse um return. <br>
         Ele não é indicado para intervalos e sim para valores em string ou numeros inteiros que sejam respostas especificas. <br> 
+        Ela é indicada para fazer checagens para uma unica varável. <br>
+        
+
         Exemplo: <br>
 
         switch (expressão a ser analisada) { <br>
@@ -300,7 +306,14 @@
               Ex for (var c = 1; c <= 10; c++) { <br>
                 //código a ser executado enquanto a condição for verdadeira <br>
                 console.log(c) <br>
-              } <br> é o jeito mais recomendado.
+              } <br> 
+              Se eu quiser criar um array e usar o for para percorrer ele, eu posso fazer assim: <br>
+              var numeros = [1, 2, 3, 4, 5] <br>
+              for (var i = 0; i < numeros.length; i++) { <br>
+                console.log(numeros[i]) <br>
+              } <br>
+              Então o for vai percorrer o array numeros e imprimir cada número na tela. <br>
+              OBS: sempre coloco menor sem o igual porque o length do array é o número de elementos que ele tem, e se eu colocar igual ele vai tentar acessar um elemento que não existe, já que os arrays começam do 0. <br>
 
 <h2>Depuração</h2>
               <p>
@@ -407,6 +420,22 @@
       document.write.getElementBy... <br>
     }
   </P>
+
+  <h2>DESESTRUTURAÇÃO</h2>
+  <p>
+    A desestruturação é uma forma de extrair valores de um objeto ou array e atribuí-los a variáveis individuais. <br>
+    Exemplo: <br>
+    const pessoa = {nome: 'João', idade: 30} <br>
+    const {nome, idade} = pessoa <br>
+    console.log(nome) // João <br>
+    console.log(idade) // 30 <br>
+    Eu posso usar o mesmo conceito para arrays. <br>
+    Exemplo: <br>
+    const numeros = [1, 2, 3] <br>
+    const [a, b, c] = numeros <br>
+    console.log(a) // 1 <br>
+    console.log(b) // 2 <br>
+    console.log(c) // 3 <br>
   
   <h2>MISC</h2>
   <p>Usar Number. e depois digitar os comando abaixo:</p>
