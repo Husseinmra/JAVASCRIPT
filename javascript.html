@@ -463,6 +463,23 @@
               // código que será executado se ocorrer um erro <br>
               console.log('Ocorreu um erro: ' + erro) <br>
             } <br>
+
+            <h2>SET INTERVAL E SET TIMEOUT</h2>
+            <P>
+              Set interval é usado para executar uma função a cada intervalo de tempo. <br>
+              Exemplo: <br>
+              setInterval(function() { <br>
+                console.log('Executando a cada 1 segundo') <br>
+              }, 1000) ou setInterval(minha função anterior sem parenteses e com console log nela ja, ou uma função que mostra a função anterior e os milisegundos) <br>
+              Set timeout é usado para executar uma função após um intervalo de tempo. <br>
+              Exemplo: <br>
+              setTimeout(function() { <br>
+                console.log('Executando após 2 segundos') <br>
+              }, 2000) <br>
+              Neste caso, o set interval espera a minha função sem ser executada (sem usar o parenteses), os milisgundos, que é o de quanto em quanto tempo eu quero que ela seja executada. è importante lembrar que minha função ja deve ter um console log para que o resultado apareça quando eu executar o set interval. <br>
+              Se eu quiser pausar ela depois de um tempo eu uso o set time out e dentro dele eu uso o clear interval (aqui dentro do parenteses eu coloco a variavel que eu criei para o set interval), milisegundos para ela parar. <br>
+             
+            </P>
   
   <h2>MISC</h2>
   <p>Usar Number. e depois digitar os comando abaixo:</p>
