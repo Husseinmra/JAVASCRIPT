@@ -10,15 +10,15 @@
 
   
   <div class = container>
-    <h2 id = titulo>TIMER</h2>
-    <h1> 00:00:00 </h1>
+    <h2 id = titulo>LISTA DE TAREFAS</h2>
   
 
   <form action="" id = "form">
-    <input id="iniciar" type="button" value="INICIAR" onclick="contar()">
-    <input id="para" type="button" value="PARAR" onclick="parar()">
-    <input id=" zera" type="button" value="ZERAR" onclick="zerar()">
+    <input class="task" type="text" value="" placeholder="Digite uma tarefa!" required>
+    <input class="submit" type="button" value="Adicionar Tarefa" onclick="add()">
   </form>
+
+  <ul class = 'list'> </ul>
   </div>
 
   <footer>
